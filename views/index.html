@@ -4,62 +4,41 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YOUR ART MUSEUM</title>
+    <title>Hello!</title>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <!-- import the webpage's javascript file -->
-    <script src="/public/script.js" defer></script>
+    <script type="application/javascript" src="/client.js" defer></script>
+
   </head>
   <body>
     <main class="main">
-      <header class="main__header">
-        <div class="main__header-container">
-
-        </div>
-      </header>
       <div class="main__inner">
-        <div class="main__register">
-          <form action="/" method="POST" id="main__form">
-            <div class="main__login-user">
-              <label for="username" class="sr-only">Create an account</label>
+        <div class="main__form">
+          <form action="/login" method="POST" id="main__form">
+            <div class="main__user">
+              <label for="username" class="sr-only">Username</label>
               <input type="text" name="username" id="username" placeholder="Username">
             </div>
-            <div class="main__login-pw">
+            <div class="main__pw">
               <label for="pw" class="sr-only">Enter your password</label>
               <input type="password" name="pw" id="pw" placeholder="Password">
             </div>
-            <div class="main__login-btn">
-              <button type="submit">Register</button>
+            <div class="main__checkbox">
+               <label for="checkbox" class="sr-only">Sign in?</label>
+               <input type="checkbox" checked="false" name="signingIn" id="signingIn">
             </div>
+            <div class="main__btn">
+              <button type="submit">Submit</button>
+            </div>
+
           </form>
-          <div class="main__sign-in">
-            <a href="">Sign In?</a>
-          </div>
-        </div>
-        <div class="main__login">
-          <form action="/" method="POST" id="main__form">
-            <d
 
-
-
-            iv class="main__login-user">
-              <label for="username" class="sr-only">Login</label>
-              <input type="text" name="username" id="username" placeholder="Username">
-            </div>
-            <div class="main__login-pw">
-              <label for="pw" class="sr-only">Enter your password</label>
-              <input type="password" name="pw" id="pw" placeholder="Password">
-            </div>
-            <div class="main__login-btn">
-              <button type="submit">Login</button>
-            </div>
-          </form>
-          <div class="main__create-account">
-            <a href="#">Create an account?</a>
-          </div>
         </div>
       </div>
     </main>
+
   </body>
+
 </html>
